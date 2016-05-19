@@ -239,5 +239,9 @@ PRODUCT_PACKAGES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 
+# Doze
+PRODUCT_PACKAGES += \
+    OnePlusDoze
+
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
