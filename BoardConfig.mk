@@ -81,6 +81,9 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_SMD_TTY := true
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Camera
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_USES_MEDIA_EXTENSIONS := true
